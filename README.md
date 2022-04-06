@@ -7,3 +7,6 @@
  
 ### Version 0.2
 	Début de normalisation de l'interface de cours
+
+### Version 0.3
+	Création des pages et ajout des éléments multimédia
