@@ -25,11 +25,11 @@
 
     <body>
 
-        <div class="bg-dark">
+        <div class="bg-dark mb-2">
             <div class="container">
                 <div class="row">
                     <nav class="col navbar navbar-expand-lg navbar-dark">
-                        <a class="navbar-bar" href="index.html">
+                        <a class="navbar-bar" href="index.html" style="text-decoration: none;">
                             <img src="images/logo.png" width="40" height="30" alt="site image">
                             Info School
                         </a>
@@ -56,23 +56,24 @@
         
         <div class="container">
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col">
                     <h1>Cours</h1>
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row mb-3">
                 <div class="col text-center text-lg-left">
-                    <form method="post" action="#">
-                        <input type="search" placeholder="Search..." size="40">
-                    </form>
+                    <div class="form-group">
+                        <label for="seach" style="display: none;">Seach :</label>
+                        <input type="text" class="form-control" placeholder="Seach..." id="seach">
+                     </div>
                 </div>
             </div>
             
-            <div class="row">
-                <div class="col-12 col-lg-4">
-                    <div class="card">
+            <div class="row mb-5">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="card shadow">
                         <img class="card-img-top" src="images/css.jpeg" alt="Certificate">
 
                         <div class="card-body">
@@ -81,13 +82,13 @@
                                  animations CSS pour donner vie à vos pages web !
                             </p>
 
-                            <div class="text-center"><a href="cours_css.html">Démarrer l'apprentissage</a></div>
+                            <div class="text-center"><a class="btn btn-primary stretched-link" href="cours_css.html">Démarrer l'apprentissage</a></div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-12 col-lg-4">
-                    <div class="card">
+                <div class="col-12 col-lg-4 mb-3 mb-lg-0">
+                    <div class="card shadow">
                         <img class="card-img-top" src="images/js.jpeg" alt="Certificate">
 
                         <div class="card-body">
@@ -96,13 +97,13 @@
                                 du langage de programmation JavaScript.
                             </p>
 
-                            <div class="text-center"><a href="cours_js.html">Démarrer l'apprentissage</a></div>
+                            <div class="text-center"><a class="btn btn-primary stretched-link" href="cours_js.html">Démarrer l'apprentissage</a></div>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-12 col-lg-4">
-                    <div class="card">
+                    <div class="card shadow">
                         <img class="card-img-top" src="images/swift.jpeg" alt="Certificate">
 
                         <div class="card-body">
@@ -112,9 +113,15 @@
                                  des applications taillées pour l'iPhone et iPad !
                             </p>
 
-                            <div class="text-center"><a href="cours_swift.html">Démarrer l'apprentissage</a></div>
+                            <div class="text-center"><a class="btn btn-primary stretched-link" href="cours_swift.html">Démarrer l'apprentissage</a></div>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div id="like_button_container"></div>
                 </div>
             </div>
         </div>
@@ -125,7 +132,23 @@
                     <div class="col">
                         <ul class="list-inline text-center font-weight-bold">
                             <li class="list-inline-item">
-                                <p>A propos</p>
+                                <a href="mailto:ibikivan1@gmail.com" style="color : white; text-decoration: none;" title="Envoyez moi un mail">Nous contacter</a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                &middot;
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a href="Formulaire.html" style="color : white; text-decoration: none;" title="Prenez 2 min pour remplir le formulaire de suggessions">Avis</a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                &middot;
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Ibikivan/" style="color : white; text-decoration: none;" target="_blank" title="Vers mon compte github">A propos</a>
                             </li>
 
                             <li class="list-inline-item">
@@ -133,15 +156,7 @@
                             </li>
 
                             <li class="list-inline-item">
-                                <p>Vie privée</p>
-                            </li>
-
-                            <li class="list-inline-item">
-                                &middot;
-                            </li>
-
-                            <li class="list-inline-item">
-                                <p>Conditions d'utilisation</p>
+                                <a href="https://openclassrooms.com/fr/courses/6391096-creez-des-sites-web-responsive-avec-bootstrap-4" style="color : white; text-decoration: none;" target="_blank" title="Vers le cours OpenClassrooms associé à ce TP">Bootstrap4</a>
                             </li>
                         </ul>
                     </div>
@@ -150,6 +165,15 @@
         </div>
 
 
+
+        <!-- Charge React -->
+        <!-- Remarque : pour le déploiement, remplacez "development.js"
+            par "production.min.js" -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Charge notre composant React -->
+        <script src="like_button.js"></script>
 
         <!-- Optional JavaScript -->
 

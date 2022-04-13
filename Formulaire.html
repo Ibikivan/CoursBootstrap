@@ -1,0 +1,230 @@
+<!doctype html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+
+        <meta charset="utf-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+        <!-- Bootstrap CSS -->
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" media="screen" href="style/design.css">
+
+
+
+        <title>lessons</title>
+
+    </head>
+
+    <body>
+
+        <div class="bg-dark mb-2">
+            <div class="container">
+                <div class="row">
+                    <nav class="col navbar navbar-expand-lg navbar-dark">
+                        <a class="navbar-bar" href="index.html" style="text-decoration: none;">
+                            <img src="images/logo.png" width="40" height="30" alt="site image">
+                            Info School
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div id="navbarContent" class="collapse navbar-collapse">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Acueille</a>
+                                </li>
+
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="lessons.html">Cours</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+
+            <div class="row mb-2">
+                <div class="col">
+                    <h1>Donnez votre avis !</h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <form method="post" action="index.html">
+                        <div class="row">
+                            <div class="col text-left mb-2 mt-3">
+                                <h4>Identification :</h4>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-12 col-lg-6">
+                                <label for="first-name">Prénom :</label>
+                                <input type="text" class="form-control" placeholder="Entrez votre prénom..." id="fname">
+                            </div>
+                                    
+                            <div class="col-12 col-lg-6">
+                                <label for="last-name">nom :</label>
+                                <input type="text" class="form-control" placeholder="Entrez votre nom..." id="lname">
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <label for="age">Age :</label>
+                                <input type="number" class="form-control" id="Age" min="7" max="200" step="1" placeholder="18">
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <label for="phone">Téléphone :</label>
+                                <input type="tel" class="form-control" id="tel" placeholder="+237 697 81 83 99">
+                            </div>
+
+                            <div class="col">
+                                <label for="email">Email :</label>
+                                <input type="email" class="form-control" id="email" placeholder="ibikivan1@gmail.com" required>
+                            </div>
+                        </div>
+                    
+                        <div class="row">
+                            <div class="col text-left mb-2 mt-5">
+                                <h4>Notes & avis :</h4>
+                            </div>
+                        </div>
+
+                        <div class="row form-group">
+                            <div class="col-12">
+                                <label for="choix">note :</label>
+                                <select class="form-control">
+                                    <optgroup label="null">
+                                    <option value="choix">Notez votre expérience sur 20</option>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <optgroup label="boff">
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <optgroup label="C'étais là">
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                    <option value="13">13</option>
+                                    <option value="14">14</option>
+                                    <optgroup label="plutôt pas mal">
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                    <option value="18">18</option>
+                                    <option value="19">19</option>
+                                    <optgroup label="excelente">
+                                    <option value="20">20</option>
+                                </select>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="text">Commentaire et suggessions</label>
+                                <textarea class="form-control" id="comments" rows="6">Veuillez entrer un commentaire...</textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row form-check">
+                               <div class="col">
+                                    <input class="form-check-input" type="checkbox" id="publicCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                    Rendre cette notation publique
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col btn btn-expand-lg">
+                                <button type="submit" class="btn btn-primary">Envoyer</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-info text-white">
+            <div class="container">
+                <footer class="row">
+                    <div class="col">
+                        <ul class="list-inline text-center font-weight-bold">
+                            <li class="list-inline-item">
+                                <a href="mailto:ibikivan1@gmail.com" style="color : white; text-decoration: none;" title="Envoyez moi un mail">Nous contacter</a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                &middot;
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a href="Formulaire.html" style="color : white; text-decoration: none;" title="Prenez 2 min pour remplir le formulaire de suggessions">Avis</a>
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                &middot;
+                            </li>
+                            
+                            <li class="list-inline-item">
+                                <a href="https://github.com/Ibikivan/" style="color : white; text-decoration: none;" target="_blank" title="Vers mon compte github">A propos</a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                &middot;
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="https://openclassrooms.com/fr/courses/6391096-creez-des-sites-web-responsive-avec-bootstrap-4" style="color : white; text-decoration: none;" target="_blank" title="Vers le cours OpenClassrooms associé à ce TP">Bootstrap4</a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+
+
+        <!-- Charge React -->
+        <!-- Remarque : pour le déploiement, remplacez "development.js"
+            par "production.min.js" -->
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+        <!-- Charge notre composant React -->
+        <script src="like_button.js"></script>
+
+        <!-- Optional JavaScript -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

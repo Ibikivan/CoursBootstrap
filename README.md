@@ -10,3 +10,6 @@
 
 ### Version 0.3
 	Création des pages et ajout des éléments multimédia
+
+### version 0.4
+	Bootstrap html complètement implémenté, en attende du JS

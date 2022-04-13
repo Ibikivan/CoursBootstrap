@@ -1,4 +1,9 @@
-.row
+html
     {
-        margin-bottom: 2%;
+        background-color: white;
     }
+
+    #courseTitle
+        {
+            margin: 10%;
+        }
